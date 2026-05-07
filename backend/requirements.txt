@@ -9,3 +9,4 @@ tenacity==9.0.0
 cloudscraper==1.2.71
 beautifulsoup4==4.12.3
 pydantic==2.8.2
+cachetools==5.5.0
