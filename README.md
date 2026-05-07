@@ -1,8 +1,8 @@
-# Zenshin — Anime Tracker & Discovery
+# OmniAnime — Anime Tracker & Discovery
 
 A modern, dark-themed anime tracking and discovery platform built with React + TypeScript + Vite (frontend) and Python + FastAPI (backend).
 
-![Zenshin](https://img.shields.io/badge/Zenshin-Anime%20Tracker-8b5cf6?style=for-the-badge)
+![OmniAnime](https://img.shields.io/badge/OmniAnime-Anime%20Tracker-8b5cf6?style=for-the-badge)
 
 ## 🎯 Features
 
