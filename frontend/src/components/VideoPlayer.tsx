@@ -37,12 +37,15 @@ interface Props {
   onSubOrDubChange?: (value: 'sub' | 'dub') => void;
 }
 
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api';
+
 function getPlayableUrl(source: StreamSource, headers?: Record<string, string>): string {
   const referer = headers?.Referer || headers?.referer || '';
   // If there's a referer header, we need to proxy through backend
   if (referer) {
     const params = new URLSearchParams({ url: source.url, referer });
-    return `/api/stream/proxy?${params.toString()}`;
+    const base = API_BASE.endsWith('/') ? API_BASE.slice(0, -1) : API_BASE;
+    return `${base}/stream/proxy?${params.toString()}`;
   }
   return source.url;
 }
